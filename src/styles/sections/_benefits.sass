@@ -1,0 +1,33 @@
+@use "../components/buttons" as *;
+@use "../components/colors" as *;
+@use "../components/root" as *;
+
+.benefits 
+    padding: 140px 0
+.benefits__grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: clamp(28px, 7vw, 100px)
+.benefit
+    max-width: 260px
+    border-bottom: 1px solid #555
+    padding-bottom: 18px
+.benefit__symbol
+    display: block
+    color: $color-orange
+    font-size: 38px
+    line-height: 1
+    margin-bottom: 10px
+    padding-bottom: $spacing-m
+
+.benefit h2
+    color: $color-orange
+    font-size: 22px
+    letter-spacing: -.02em
+    margin-bottom: 10px
+
+.benefit p
+    margin-bottom: 0
+    color: #d2ceca
+    font-size: 14px
+    line-height: 1.55

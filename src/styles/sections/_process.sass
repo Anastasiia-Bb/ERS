@@ -1,0 +1,84 @@
+@use "../components/colors" as *;
+@use "../components/root" as *;
+@use "../components/buttons" as *;
+
+.process
+  position: relative
+  padding: 100px 0 84px
+  overflow: hidden
+
+  &__layout
+    display: flex
+    gap: clamp(60px, 10vw, 145px)
+
+  &__intro
+    flex: .95
+    min-width: 0
+
+    h2
+      font-size: clamp(36px, 4vw, 52px)
+      margin-bottom: 20px
+
+    p
+      font-size: 16px
+      max-width: 440px
+      line-height: 1.55
+      margin-bottom: 28px
+      margin-bottom: $spacing-2xl
+    // h2
+    //   font-size: clamp(40px, 4.2vw, 56px)
+    //   margin-bottom: 20px
+
+    // p
+    //   max-width: 440px
+    //   line-height: 1.55
+    //   margin-bottom: 28px
+
+  &__photo
+    display: block
+    max-width: 100%
+    max-height: 342px
+    border-radius: 14px
+
+
+  &__steps
+    flex: 1
+    min-width: 0
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+.process-step
+  display: flex
+  align-items: flex-start
+  gap: 16px
+
+  &__gear
+    flex: 0 0 30px
+    width: 30px
+    height: 30px
+    margin-top: 18px
+
+  > div
+    flex: 1
+    min-width: 0
+    padding: 24px
+    background: #fff
+    border-radius: 16px
+    box-shadow: 0 5px 18px rgba(50, 30, 15, .035)
+    
+  &__number
+    display: block
+    color: $color-orange
+    font: 900 14px $font-display
+    margin-bottom: $spacing-s
+
+  h3
+    font-size: 21px
+    line-height: 1.05
+    margin-bottom: 8px
+
+  p
+    margin-bottom: 0
+    line-height: 1.45
+    color: #4d4945

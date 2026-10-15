@@ -1,0 +1,79 @@
+@use "colors" as *
+@use "root" as *
+
+.button
+    min-height: 42px
+    padding: 0 22px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 8px
+    border: 1px solid transparent
+    border-radius: 999px
+    font-size: 16px
+    font-weight: 700
+    line-height: 1
+    white-space: nowrap
+    transition: background .22s ease, color .22s ease, border-color .22s ease, transform .22s ease
+
+    &:hover
+        transform: translateY(-2px)
+
+    &:focus-visible
+        outline: 2px solid $color-orange
+        outline-offset: 4px
+
+.button--primary
+    color: $color-bg
+    background: $color-orange
+    border-color: $color-orange
+
+    &:hover
+        background: $color-bg-soft
+        border-color: $color-bg-soft
+        color: $color-orange
+
+.button--dark
+    background: $color-bg
+    color: $color-orange
+    border-color: $color-orange
+
+    &:hover
+        background: $color-bg-soft
+        border-color: $color-bg-soft
+        color: $color-orange
+
+.button--outline
+    border-color: $color-orange
+    color: $color-orange
+    background: $color-bg
+
+    &:hover
+        background: $color-bg-soft
+        border-color: $color-bg-soft
+        color: $color-orange
+
+.button--small
+    min-height: 34px
+    padding-inline: 20px
+    font-size: 14px
+
+.button--phone
+    min-height: 34px
+    padding-inline: 15px
+    font-size: 14px
+
+.gear
+    display: grid
+    place-items: center
+    font-family: Arial, sans-serif
+    line-height: 1
+    user-select: none
+    animation: gear-clockwise 24s linear infinite
+    transform-origin: center
+
+@keyframes gear-clockwise
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(360deg)

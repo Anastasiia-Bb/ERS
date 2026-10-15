@@ -1,0 +1,46 @@
+@use "../components/colors" as *;
+@use "../components/root" as *;
+@use "../components/buttons" as *;
+
+.emergency
+  padding: 72px 0 90px
+
+  &__inner
+    position: relative
+
+  h2
+    font-size: clamp(36px, 4.5vw, 58px)
+    margin-bottom: 22px
+    max-width: 850px
+    max-width: 1018px
+
+  > .container > p
+    max-width: 650px
+    color: #d8d3cf
+    margin-bottom: $spacing-2xl
+
+  &__actions
+    display: flex
+    gap: 16px
+    flex-wrap: wrap
+
+.van-stage
+  height: 100px
+  position: relative
+  margin-bottom: 24px
+  overflow: hidden
+
+.van
+  width: 82px
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  will-change: transform
+
+.phone-icon
+    width: 24px
+    transition: filter 0.2s ease
+
+.button--phone:hover .phone-icon
+    filter: brightness(0)

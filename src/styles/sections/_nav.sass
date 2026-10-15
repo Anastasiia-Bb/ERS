@@ -1,0 +1,47 @@
+@use "../components/colors" as *;
+@use "../components/root" as *;
+@use "../components/buttons" as *;
+
+.site-header
+    height: var(--header-height)
+    padding-inline: max(32px, calc((100vw - #{$container}) / 2))
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 34px
+    background: rgb(25, 25, 25)
+    border-bottom: 1px solid rgba(255,255,255,.08)
+    position: relative
+    z-index: 20
+.brand
+    width: 68px
+    height: 48px
+    display: inline-flex
+    flex: 0 0 auto
+    align-items: center
+    justify-content: center
+    position: relative
+    color: $color-white
+.main-nav
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: clamp(20px, 3vw, 48px)
+    margin-left: auto
+.main-nav a, .footer__nav a
+    font-size: 14px
+    transition: color .2s
+.main-nav a:hover, .footer__nav a:hover
+    color: $color-orange
+.header-actions
+    display: flex
+    gap: 10px
+    align-items: center
+.menu-toggle
+    display: none
+.nav-icon
+    width: 16px
+    transition: filter 0.2s ease
+
+.button--phone:hover .nav-icon
+    filter: brightness(0)

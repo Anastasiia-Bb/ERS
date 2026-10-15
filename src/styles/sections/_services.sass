@@ -1,0 +1,263 @@
+@use "../components/colors" as *
+@use "../components/root" as *
+@use "../components/buttons" as *
+
+// .services
+//     position: relative
+//     padding: 12px 0 112px
+//     overflow: hidden
+
+.section-heading
+    max-width: 820px
+    margin-bottom: 36px
+
+.section-heading h2
+    font-size: clamp(36px, 4vw, 52px)
+    margin-bottom: 18px
+
+// .section-heading p
+//     max-width: 670px
+//     margin-bottom: 0
+//     font-size: 16px
+//     line-height: 1.55
+    
+
+// .section-heading--dark p
+//     color: #d5d0cb
+
+// .services__grid
+//     position: relative
+//     display: grid
+//     grid-template-columns: 1.25fr 1fr 1fr
+//     grid-template-rows: 190px 190px
+//     gap: 18px
+//     padding-inline: 8px
+
+// .service-card
+//     min-width: 0
+//     overflow: hidden
+//     border-radius: $radius-card
+//     background: $color-card
+
+// .service-card h3
+//     font-size: 17px
+//     margin-bottom: 8px
+//     line-height: 1.05
+// .service-card p
+//     color: #d9d5d1
+//     font-size: 10px
+//     line-height: 1.45
+//     margin-bottom: 0
+// .service-card__icon
+//     color: $color-orange
+//     display: inline-grid
+//     place-items: center
+//     width: 28px
+//     height: 28px
+//     flex: 0 0 auto
+//     border: 1px solid rgba(255,120,31,.3)
+//     border-radius: 8px
+//     font-size: 15px
+// .service-card--feature
+//     grid-column: 1
+//     grid-row: 2 / 3
+//     display: flex
+//     flex-direction: column
+//     position: relative
+// .service-card__photo
+//     flex: 1
+//     max-width: 650px
+//     min-height: 0
+//     background: linear-gradient(0deg, rgba(20,20,20,.94), rgba(20,20,20,.05) 80%), url("assets/industrial-machine.jpg") center / cover, #3a3835
+// .service-card__feature-copy
+//     padding: 0 22px 20px
+//     margin-top: -75px
+//     position: relative
+//     z-index: 1
+// .service-card--feature .service-card__icon
+//     display: none
+
+// .service-card--horizontal
+//     grid-column: 2 / 4
+//     display: flex
+//     gap: 14px
+//     align-items: flex-start
+//     padding: 23px 20px
+
+// .service-card--horizontal .service-card__icon
+//     margin-top: 2px
+
+// .service-card--horizontal h3
+//     font-size: 17px
+
+// .service-card--compact
+//     padding: 22px
+//     position: relative
+
+// .service-card--compact .service-card__icon
+//     float: left
+//     margin-right: 12px
+
+// .service-card--compact h3
+//     font-size: 16px
+
+// .service-card--compact p
+//     clear: both
+//     padding-top: 10px
+
+// .services__next
+//     width: 74px
+//     height: 74px
+//     align-self: center
+//     justify-self: center
+//     border: 1px solid #777
+//     border-radius: 50%
+//     color: $color-orange
+//     display: grid
+//     place-items: center
+//     font-size: 25px
+//     transition: background 0.2s ease, color 0.2s ease
+
+//     &:hover
+//         background: $color-orange
+//         color: $color-bg
+
+// .services__decoration
+//     position: absolute
+//     right: -95px
+//     top: 20px
+//     color: #3b210f
+//     font-size: 220px
+//     opacity: .8
+//     pointer-events: none
+
+
+.services
+  padding-top: 0
+  padding-bottom: $spacing-5xl
+
+  &__container
+    width: 100%
+    max-width: $container
+    margin-inline: auto
+
+  // Верхний ряд: фото и правая колонка
+  &__top
+    display: flex
+    gap: $spacing-s
+    align-items: stretch
+
+  // Большое фото
+  &__featured
+    position: relative
+    flex: 0 0 650px
+    min-width: 0
+    min-height: 480px
+    overflow: hidden
+    border-radius: $radius-card
+    background: $color-card
+
+  &__featured-image
+    position: absolute
+    inset: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: center
+
+  &__featured-content
+    position: absolute
+    inset: auto 0 0
+    z-index: 1
+    padding: $spacing-l
+    color: $color-white
+    background: linear-gradient(transparent, rgba(0, 0, 0, .65))
+
+    h3
+      margin: 0 0 $spacing-xs
+      font-family: $font-display
+      font-size: 24px
+
+    p
+      margin: 0
+      color: $color-white
+      line-height: 1.5
+
+  // Две карточки справа
+  &__side
+    display: flex
+    flex: 1 1 0
+    min-width: 0
+    flex-direction: column
+    gap: $spacing-s
+
+  // Общие стили карточек
+  &__card
+    display: flex
+    align-items: flex-start
+    gap: $spacing-m
+    flex: 1 1 0
+    min-width: 0
+    padding: $spacing-l
+    border-radius: $radius-card
+    background: $color-card
+    color: $color-white
+
+  &__icon
+    display: flex
+    flex: 0 0 40px
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    background: $color-bg
+    color: $color-orange
+    width: 40px
+    height: 40px
+
+  &__card-content
+    min-width: 0
+
+    h3
+      margin: 0 0 $spacing-s
+      font-family: $font-display
+      font-size: 21px
+      line-height: 1.15
+
+    p
+      margin: 0
+      color: $font-color-light
+      line-height: 1.5
+
+  // Нижний ряд
+  &__bottom
+    display: flex
+    align-items: stretch
+    gap: $spacing-s
+    margin-top: $spacing-s
+
+  &__card--bottom
+    flex: 1 1 0
+
+  // Круглая кнопка справа
+  &__more
+    display: flex
+    flex: 0 0 150px
+    align-items: center
+    justify-content: center
+    color: $color-ink
+    text-decoration: none
+
+    span
+      display: flex
+      width: 88px
+      height: 88px
+      align-items: center
+      justify-content: center
+      border: 4px solid $color-card
+      border-radius: 50%
+      background: $color-orange
+      font-size: 40px
+      transition: transform .25s ease
+
+    &:hover span
+      transform: rotate(-45deg)

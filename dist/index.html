@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arbutus&family=Bagel+Fat+One&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>ERS</title>
+</head>
+
+<body>
+    <header class="site-header" id="inicio">
+        <a class="brand" href="#inicio" aria-label="ERS España, inicio">
+            <img class="logo" src="assets/logo/ers-logo.svg" alt="logo ers">
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span class="sr-only">Abrir menú</span>
+        </button>
+        <nav>
+            <ul class="main-nav" id="main-nav" aria-label="Navegación principal">
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#proceso">Como trabajamos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a class="button button--outline button--phone" href="tel:+34614288886"><img class="nav-icon" src="assets/icons/phone.svg" alt="phone icon">
+                +34 614 288 886</a>
+            <a class="button button--primary button--small" href="https://wa.me/34614288886" target="_blank"
+                        rel="noreferrer">Dejar mensaje</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section-dark grid-texture" aria-labelledby="hero-title">
+            <div class="hero__content container">
+                <p class="eyebrow hero__eyebrow">ERS España · Taller móvil industrial</p>
+                <h1 class="hero-title" id="hero-title">Reparación de maquinaria <span>industrial</span> directamente en
+                    <span>su empresa</span>
+                </h1>
+                <p class="hero__description">Servicio de reparación a domicilio para maquinaria industrial, sistemas
+                    hidráulicos y motores. Respuesta rápida, trabajo profesional y soluciones en el lugar.</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#contacto">Solicitar servicio</a>
+                    <a class="button button--dark" href="#servicio">Saber más</a>
+                </div>
+            </div>
+            <div class="hero__gear hero__gear--left gear" aria-hidden="true"><img src="assets/gear/gear-standart.svg"
+                    alt="Gear small"></div>
+            <div class="hero__gear hero__gear--right gear" aria-hidden="true"><img src="assets/gear/gear-big.svg"
+                    alt="Gear big"></div>
+            <div class="ticker" aria-label="Nuestros servicios">
+                <div class="ticker__track">
+                    <span>Mantenimiento · Instalación · Servicio a domicilio · Reparación industrial · Mantenimiento
+                        preventivo · Asistencia técnica</span>
+
+                    <span>Mantenimiento · Instalación · Servicio a domicilio · Reparación industrial · Mantenimiento
+                        preventivo · Asistencia técnica</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits section-dark" aria-label="Ventajas del servicio">
+            <div class="container benefits__grid">
+                <article class="benefit">
+                    <img class="benefit__symbol" aria-hidden="true" src="assets/figure/element-of-logo.svg">
+                    <h2>Servicio a domicilio</h2>
+                    <p>Nos desplazamos directamente hasta su empresa o lugar de trabajo.</p>
+                </article>
+                <article class="benefit">
+                    <img class="benefit__symbol" aria-hidden="true" src="assets/figure/element-of-logo.svg">
+                    <h2>Respuesta rápida</h2>
+                    <p>Atendemos su solicitud y buscamos una solución en el menor tiempo posible.</p>
+                </article>
+                <article class="benefit">
+                    <img class="benefit__symbol" aria-hidden="true" src="assets/figure/element-of-logo.svg">
+                    <h2>Experiencia técnica</h2>
+                    <p>Reparación de sistemas hidráulicos, motores y maquinaria industrial.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="services section-dark" id="servicio" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-heading section-heading--dark">
+                    <h2 id="services-title">Reparamos la avería<span> donde ocurre.</span></h2>
+                    <p>Seis especialidades técnicas con taller móvil propio. Sin grúas, sin transportes especiales, sin
+                        semanas de parada.</p>
+                </div>
+
+                <div class="services__container">
+                    <!-- Верхний ряд: фото + две карточки -->
+                    <div class="services__top">
+
+                        <article class="services__featured">
+                            <img class="services__featured-image" src="assets/images/photo-of-motor.png"
+                                alt="Промышленное оборудование">
+
+                            <div class="services__featured-content">
+                                <h3>Maquinaria Industrial &amp; Líneas</h3>
+                                <p>
+                                    Reparación integral de prensas, plegadoras,
+                                    cintas transportadoras, empacadoras y centros
+                                    de mecanizado sin traslado de la máquina.
+                                </p>
+                            </div>
+                        </article>
+
+                        <div class="services__side">
+
+                            <article class="services__card">
+                                <div class="services__icon"><img src="assets/icons/hidraulicos.svg"
+                                        alt="Sistemas Hidráulicos"></div>
+                                <div class="services__card-content">
+                                    <h3>Sistemas Hidráulicos &amp; Neumáticos</h3>
+                                    <p>
+                                        Detección de fugas, latiguillos a medida
+                                        prensados en furgón, distribuidores,
+                                        bombas de pistones y cilindros.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="services__card">
+                                <div class="services__icon"><img src="assets/icons/componentes.svg" alt="Componentes">
+                                </div>
+                                <div class="services__card-content">
+                                    <h3>Componentes &amp; Transmisiones</h3>
+                                    <p>
+                                        Ajuste de engranajes, cajas reductoras,
+                                        rodamientos, alineación láser de ejes y
+                                        poleas, piñones y coronas.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+
+                    <!-- Нижний ряд -->
+                    <div class="services__bottom">
+
+                        <article class="services__card services__card--bottom">
+                            <div class="services__icon"><img src="assets/icons/bombas.svg" alt="Bombas Industriales">
+                            </div>
+                            <div class="services__card-content">
+                                <h3>Bombas Industriales</h3>
+                                <p>
+                                    Reparación de bombas centrífugas,
+                                    sumergibles, de vacío y dosificadoras.
+                                    Sustitución de cierres mecánicos e impulsores.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="services__card services__card--bottom">
+                            <div class="services__icon"><img src="assets/icons/motores.svg" alt="Motores & Generadores">
+                            </div>
+                            <div class="services__card-content">
+                                <h3>Motores &amp; Generadores</h3>
+                                <p>
+                                    Diagnosis electrónica, puesta a punto de
+                                    motores diésel industriales, bobinados de
+                                    motores eléctricos y calibración de inyección.
+                                </p>
+                            </div>
+                        </article>
+
+                        <a class="services__more" href="#contacto" aria-label="Más información sobre los servicios">
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="process section-cream grid-texture-cream" id="proceso" aria-labelledby="process-title">
+            <div class="container process__layout">
+                <div class="process__intro">
+                    <h2 id="process-title">Del aviso a la<br>máquina<br><span>en marcha.</span></h2>
+                    <p>Un procedimiento ensayado en cientos de plantas: cuatro fases, un solo desplazamiento y
+                        producción reanudada el mismo día.</p>
+                        <img class="process__photo" role="img" aria-label="Técnico trabajando en maquinaria industrial" src="assets/images/mechanic.png" alt="Técnico trabajando en maquinaria industrial">
+                </div>
+                <div class="process__steps">
+                    <article class="process-step">
+                        <img class="process-step__gear gear" src="assets/gear/gear-grey.svg" alt="Gear" aria-hidden="true">
+                        <div>
+                            <span class="process-step__number">1.</span>
+                            <h3>Contacto &amp; triaje<br>telefónico</h3>
+                            <p>Recepción directa de llamada o WhatsApp. Nuestros ingenieros evalúan la avería, el tipo
+                                de máquina y los recambios potenciales.</p>
+                        </div>
+                    </article>
+                    <article class="process-step">
+                        <img class="process-step__gear gear" src="assets/gear/gear-grey.svg" alt="Gear" aria-hidden="true">
+                        <div>
+                            <span class="process-step__number">2.</span>
+                            <h3>Desplazamiento del<br>taller móvil</h3>
+                            <p>Asignamos la furgoneta técnica más cercana con equipamiento de mecanizado, prensado
+                                hidráulico y los repuestos necesarios.</p>
+                        </div>
+                    </article>
+                    <article class="process-step">
+                        <img class="process-step__gear gear" src="assets/gear/gear-grey.svg" alt="Gear" aria-hidden="true">
+                        <div>
+                            <span class="process-step__number">3.</span>
+                            <h3>Diagnóstico in situ<br>avanzado</h3>
+                            <p>Inspección termográfica, manométrica y endoscópica directamente en su nave o puesto de
+                                trabajo para localizar la causa raíz.</p>
+                        </div>
+                    </article>
+                    <article class="process-step">
+                        <img class="process-step__gear gear" src="assets/gear/gear-grey.svg" alt="Gear" aria-hidden="true">
+                        <div>
+                            <span class="process-step__number">4.</span>
+                            <h3>Reparación &amp; puesta<br>en marcha</h3>
+                            <p>Ejecución técnica inmediata, prueba de carga en presencia del jefe de planta y entrega de
+                                informe técnico de intervención.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency section-dark" id="contacto" aria-labelledby="emergency-title">
+            <div class="container emergency__inner">
+                <div class="van-stage">
+                    <img class="van" src="assets/icons/van.svg" alt="Van">
+                </div>
+                <h2 id="emergency-title">¿Máquina parada?<br>Enviamos un taller móvil<span> ahora mismo.</span></h2>
+                <p>Llámenos directamente o abra un chat de WhatsApp con fotos y vídeos de la avería: le asignamos el
+                    técnico especialista lo antes posible.</p>
+                <div class="emergency__actions">
+                    <a class="button button--primary" href="https://wa.me/34614288886" target="_blank"
+                        rel="noreferrer">Solicitar servicio por WhatsApp</a>
+                    <a class="button button--outline button--phone" href="tel:+34614288886"><img class="phone-icon" src="assets/icons/phone.svg" alt="Phone">+34 614 288 886</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer section-dark">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a class="brand brand--large" href="#inicio" aria-label="ERS España, inicio">
+                    <img class="logo" src="assets/logo/ers-logo.svg" alt="logo ers">
+                </a>
+                <h2>Servicio urgente móvil</h2>
+            </div>
+            <div class="footer__contact">
+                <h3>Contacto directo</h3>
+                <div class="footer__info"><a href="tel:+34612682409"><img src="assets/icons/phone.svg" alt="Phone"> <span>614 288 886</span></a>
+                <a href="tel:+34612836489"><img src="assets/icons/ChatCircle.svg" alt="Message"> <span>614 288 886</span></a>
+                <a href="mailto:ersindustrialmobility@gmail.com"><img src="assets/icons/envelope.svg" alt="Email"> <span>ersindustrialmobility@gmail.com</span></a>
+                    </div>
+            </div>
+            <div class="footer__nav">
+                <h3>Navegación del sitio</h3><a href="#servicio">Servicio</a><a href="#proceso">Como trabajamos</a><a
+                    href="#resenas">Reseñas</a><a href="#contacto">Contacto</a>
+            </div>
+            <p class="footer__copyright">© 2026 ERS España</p>
+        </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

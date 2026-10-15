@@ -1,0 +1,125 @@
+@use "../components/colors" as *;
+@use "../components/root" as *;
+@use "../components/buttons" as *;
+
+.hero
+    min-height: 650px
+    position: relative
+    display: flex
+    align-items: center
+    overflow: hidden
+
+.hero-title
+    max-width: 783px
+
+.hero__content
+    position: relative
+    z-index: 2
+    padding-block: 74px 150px
+
+.hero__eyebrow
+    display: none
+    color: $color-orange
+    text-transform: uppercase
+    font-size: 10px
+    letter-spacing: .14em
+
+.hero h1
+    max-width: 690px
+    margin-bottom: 22px
+    font-size: clamp(44px, 5.2vw, 76px)
+
+.hero h1 span, .section-heading h2 span, .process h2 span, .emergency h2 span
+    color: $color-orange
+
+.hero__description
+    max-width: 764px
+    font-size: 16px
+    line-height: 1.55
+    margin-bottom: 26px
+    color: #e3dfda
+
+.hero__actions
+    display: flex
+    gap: 12px
+
+.hero__gear
+    position: absolute
+    display: block
+    height: auto
+    opacity: .66
+    pointer-events: none
+    animation: gear-rotate 10s linear infinite
+
+// .hero__gear
+//     position: absolute
+//     color: #777
+//     opacity: .66
+//     font-size: 360px
+//     pointer-events: none
+
+.hero__gear--left
+    width: 360px
+    left: -205px
+    top: 250px 
+
+// .hero__gear--left
+//     left: -205px
+//     top: 100px
+
+.hero__gear--right
+  width: 1500px
+  right: -25vw
+  bottom: 20px
+  animation: gear-rotate 12s linear infinite
+
+// .hero__gear--right
+//     width: 1500px
+//     right: -100px
+//     bottom: 20px
+
+// .hero__gear--right
+//     right: -120px
+//     top: 65px
+//     font-size: 450px
+
+.ticker
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    overflow: hidden
+    background: $color-bg-soft
+    border-top: 1px solid rgba(255,255,255,.06)
+    border-bottom: 1px solid rgba(255,255,255,.06)
+
+.ticker__track
+    width: max-content
+    min-height: 64px
+    display: flex
+    align-items: center
+    gap: 18px
+    animation: ticker-scroll 30s linear infinite
+    color: $font-color-light
+    font: 400 32px $font-display
+    white-space: nowrap
+.ticker__track i
+    color: $color-orange
+    font-style: normal
+    
+@keyframes gear-rotate
+    from
+        rotate: 0deg
+    to
+        rotate: 360deg
+
+// @keyframes gear-move
+//     0%, 100%
+//         transform: translate(0, 0) rotate(0deg)
+
+//     50%
+//         transform: translate(-300px, 300px) rotate(180deg)
+
+@keyframes ticker-scroll
+    to
+        transform: translateX(-50%)
